@@ -26,11 +26,19 @@ public class Carro {
 	}	
 	
 	public double consumoAtual () {
-		return km / consumo;
+		double consumoAteHoje = km / consumo;
+		return consumoAteHoje;
 	}
 	
 	public double gastoTotal (double valorGasolina) {
 		return consumoAtual() * valorGasolina;
+	}
+	
+	public void mostraConsumo () {
+		double consumoAteHoje = consumoAtual();
+		
+		System.out.println("O Fuscão já gastou " + consumoAteHoje 
+				+ " litros de gasolina (R$ " + gastoTotal(3.10) + ") =X");
 	}
 
 	

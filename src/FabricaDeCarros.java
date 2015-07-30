@@ -1,8 +1,11 @@
+import java.util.Objects;
+
 
 public class FabricaDeCarros {
 
 	public static void main (String[] args) {
 		
+		//Tipo variável operador instanciação
 		Carro fusca = new Carro();
 		fusca.ano = 1976;
 		fusca.km = 100000;
@@ -17,12 +20,20 @@ public class FabricaDeCarros {
 		fusca.frear();
 		
 //		double consumoAteHoje = fusca.km / fusca.consumo;
-		double consumoAteHoje = fusca.consumoAtual();
+		fusca.mostraConsumo();
 		
-		System.out.println(consumoAteHoje);
+		Carro camaro = null;
+//		camaro.mostraConsumo();
 		
-		System.out.println("O Fuscão já gastou " + consumoAteHoje 
-				+ " litros de gasolina (R$ " + fusca.gastoTotal(3.10) + ") =X");
+		if (camaro != null) {
+			System.out.println("");
+		} else {
+			System.out.println("Variável nula !");
+		}
+		
+		Objects.requireNonNull(camaro);
+		
+		
 	}
 	
 }
