@@ -5,7 +5,7 @@ public class FabricaDeCarros {
 
 	public static void main (String[] args) {
 		
-		//Tipo variável operador instanciação
+		//Tipo variável operador criação do objeto
 		Carro fusca = new Carro();
 		fusca.ano = 1976;
 		fusca.km = 100000;
