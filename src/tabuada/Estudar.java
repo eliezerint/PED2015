@@ -21,6 +21,8 @@ public class Estudar {
 		for (int i = 1; i < tabuada.length; i++) {
 			System.out.println(preTexto + " " + tabuada[i]);	
 		}
+		
+		scanner.close();
 	}
 
 }
